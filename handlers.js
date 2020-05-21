@@ -64,7 +64,7 @@ const welcome = (req, res) => {
 
 	// Finally, return the welcome message to the user, along with their
 	// username given in the token
-	res.send(`Welcome ${payload.username}!`)
+	res.send({username:payload.username})
 }
 
 
